@@ -26,13 +26,16 @@ public class FruitPlanet extends World
         addObject(babyAdventurer, 0, 0);
 
         //Creo una fila de abejas separadas la misma distancia
+        crearFilaAbejas(5, 100);
         crearFilaAbejas(5, 200);
+        crearFilaAbejas(5, 300);
+
     }
 
     /**
      * Crea una fila de abejas separadas la misma distancia.
      * @param numObjetos cuántas abejas hay en la fila
-     * @param y          altura (coordenada y) de la fila
+     * @param y altura (coordenada y) de la fila
      */
     public void crearFilaAbejas(int numObjetos, int y)
     {
