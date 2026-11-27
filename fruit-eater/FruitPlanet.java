@@ -26,9 +26,20 @@ public class FruitPlanet extends World
         addObject(babyAdventurer, 0, 0);
 
         //Creo una fila de abejas separadas la misma distancia
-        crearFilaAbejas(5, 100);
-        crearFilaAbejas(5, 200);
-        crearFilaAbejas(5, 300);
+
+        int initY = 50;
+        crearFilaAbejas(5, initY);
+        initY = initY + 50;
+        crearFilaAbejas(5, initY);
+        initY = initY + 50;
+        crearFilaAbejas(5, initY);
+        initY = initY + 50;
+        showText("value of y" + initY, 100, 100);
+        
+        for(int i = 0; i < 4; i++){
+        crearFilaAbejas(5, initY);
+        initY = initY + 50;
+        }
 
     }
 
